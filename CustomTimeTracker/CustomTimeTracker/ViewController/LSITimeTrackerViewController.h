@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LSITimeTrackerViewController.h
 //  CustomTimeTracker
 //
 //  Created by Lambda_School_Loaner_219 on 2/18/20.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface LSITimeTrackerViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

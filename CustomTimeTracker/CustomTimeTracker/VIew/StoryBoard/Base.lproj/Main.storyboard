@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Client name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PvU-Do-sdp">
+                                <rect key="frame" x="20" y="60" width="365" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Summary:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2bE-6p-uNu">
+                                <rect key="frame" x="25" y="117" width="355" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hourly Rate" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AaE-IJ-ad5">
+                                <rect key="frame" x="25" y="177" width="355" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Time Worked (in hours)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sag-03-AKB">
+                                <rect key="frame" x="25" y="234" width="355" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="p11-mh-Uul">
+                                <rect key="frame" x="0.0" y="340" width="414" height="537"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMg-pJ-TjZ">
+                                <rect key="frame" x="175" y="313" width="64" height="30"/>
+                                <state key="normal" title="Log Time"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="PvU-Do-sdp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="1oT-a7-0LR"/>
+                            <constraint firstItem="AaE-IJ-ad5" firstAttribute="top" secondItem="2bE-6p-uNu" secondAttribute="bottom" constant="26" id="3JK-AP-z6g"/>
+                            <constraint firstItem="p11-mh-Uul" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="53a-2s-3yg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AaE-IJ-ad5" secondAttribute="trailing" constant="34" id="5DZ-HS-gbu"/>
+                            <constraint firstItem="p11-mh-Uul" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7ue-CW-zTG"/>
+                            <constraint firstItem="Sag-03-AKB" firstAttribute="top" secondItem="AaE-IJ-ad5" secondAttribute="bottom" constant="23" id="Cmy-HR-yrv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2bE-6p-uNu" secondAttribute="trailing" constant="34" id="EN8-oz-N8x"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sag-03-AKB" secondAttribute="trailing" constant="34" id="Hog-DN-ou0"/>
+                            <constraint firstItem="p11-mh-Uul" firstAttribute="top" secondItem="Sag-03-AKB" secondAttribute="bottom" constant="72" id="LWe-d6-iyM"/>
+                            <constraint firstItem="2bE-6p-uNu" firstAttribute="top" secondItem="PvU-Do-sdp" secondAttribute="bottom" constant="23" id="PGZ-zV-mkJ"/>
+                            <constraint firstItem="2bE-6p-uNu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="QnR-B3-nQU"/>
+                            <constraint firstItem="PvU-Do-sdp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ssa-BV-EWU"/>
+                            <constraint firstItem="Sag-03-AKB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="UEh-uH-Vco"/>
+                            <constraint firstItem="AaE-IJ-ad5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="ce1-aM-UmO"/>
+                            <constraint firstItem="qMg-pJ-TjZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="175" id="lqm-3R-aQe"/>
+                            <constraint firstAttribute="bottom" secondItem="p11-mh-Uul" secondAttribute="bottom" constant="19" id="mpG-AX-FCW"/>
+                            <constraint firstItem="qMg-pJ-TjZ" firstAttribute="top" secondItem="Sag-03-AKB" secondAttribute="bottom" constant="45" id="tdV-5C-lm0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PvU-Do-sdp" secondAttribute="trailing" constant="29" id="uoI-FO-W5Q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qMg-pJ-TjZ" secondAttribute="trailing" constant="175" id="wxB-aG-JA5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+</document>
