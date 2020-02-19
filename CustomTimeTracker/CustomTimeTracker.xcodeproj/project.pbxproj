@@ -15,6 +15,7 @@
 		FB5F3EE523FC8F0F001B9899 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5F3EE423FC8F0F001B9899 /* main.m */; };
 		FB5F3EF223FC93F7001B9899 /* LSITimeTrackerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5F3EF123FC93F7001B9899 /* LSITimeTrackerViewController.m */; };
 		FB5F3EF623FC9535001B9899 /* LSITimedTask.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5F3EF523FC9535001B9899 /* LSITimedTask.m */; };
+		FB5F3EF923FD0854001B9899 /* LSITimedTaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5F3EF823FD0854001B9899 /* LSITimedTaskController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		FB5F3EF123FC93F7001B9899 /* LSITimeTrackerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSITimeTrackerViewController.m; sourceTree = "<group>"; };
 		FB5F3EF423FC9535001B9899 /* LSITimedTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSITimedTask.h; sourceTree = "<group>"; };
 		FB5F3EF523FC9535001B9899 /* LSITimedTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSITimedTask.m; sourceTree = "<group>"; };
+		FB5F3EF723FD0854001B9899 /* LSITimedTaskController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSITimedTaskController.h; sourceTree = "<group>"; };
+		FB5F3EF823FD0854001B9899 /* LSITimedTaskController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSITimedTaskController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,8 @@
 		FB5F3EEC23FC9293001B9899 /* ModelController */ = {
 			isa = PBXGroup;
 			children = (
+				FB5F3EF723FD0854001B9899 /* LSITimedTaskController.h */,
+				FB5F3EF823FD0854001B9899 /* LSITimedTaskController.m */,
 			);
 			path = ModelController;
 			sourceTree = "<group>";
@@ -204,6 +209,7 @@
 				FB5F3ED723FC8F0C001B9899 /* SceneDelegate.m in Sources */,
 				FB5F3EF623FC9535001B9899 /* LSITimedTask.m in Sources */,
 				FB5F3EF223FC93F7001B9899 /* LSITimeTrackerViewController.m in Sources */,
+				FB5F3EF923FD0854001B9899 /* LSITimedTaskController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
